@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Crude oil</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/img/mainlogo.jpeg" rel="icon">
+  <link href="static/img/mainlogo.jpeg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Krub:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="static/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center">
+  
+        <h1 class="logo mr-auto"><a href="/">Crude oil</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/mainlogo.jpeg" alt="" class="img-fluid"></a>-->
+  
+        <nav class="nav-menu d-none d-lg-block">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/predict">Predict</a></li>
+           </ul>
+        </nav><!-- .nav-menu -->
+  
+      </div>
+    </header><!-- End Header -->
+    
+    
+        
+        
+          <h1>Crude Oil Prediction</h1>
+          <form  method="post" role="form" class="form" action="/login">
+            <div class="row no-gutters">
+              <div class="col-md-6 form-group pr-md-1">
+                <input type="value" name="year" class="form-control" id="name"
+                  placeholder="Enter the crude oil prices for past ten days">
+              </div>
+            </div>
+          
+            <div class="text-center">
+              <button id="predict" class="btn btn-danger" name="year" type="submit" >Predict</button>
+              <button id="reset" class="btn btn-primary" onclick="resetPage()" type="button">Reset</button>
+              <br>
+              <h6 class = "right " id="ted"></h6>
+            </div>
+          </form>
+        
+        
+
+
+  <script>
+    function resetPage() {
+    console.log("HELLO");
+    location.reload();
+  } 
+  let x = '{{showcase}}';
+   
+   document.getElementById("ted").innerHTML=x;
+            
+            
+  </script>
+</body>
+</html>
