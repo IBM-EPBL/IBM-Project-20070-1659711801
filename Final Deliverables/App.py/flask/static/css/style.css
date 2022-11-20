@@ -1,0 +1,464 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: #3b4ef8;
+}
+
+a:hover {
+  color: #6c7afa;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Krub", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+}
+
+.back-to-top i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background: #3b4ef8;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+.back-to-top i:hover {
+  background: #0a22f6;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #3b4ef8;
+  border-top-color: #e2e5fe;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: #f6f7ff;
+  border-bottom: 2px solid #eceefe;
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+}
+
+#header .logo {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+}
+
+#header .logo a {
+  color: #2d405f;
+  text-transform: uppercase;
+}
+
+#header .logo img {
+  max-height: 40px;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Desktop Navigation */
+.nav-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu > ul {
+  display: flex;
+}
+
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+  padding:0px 0px 0px 40px;
+}
+
+.nav-menu a {
+  display: flex;
+  position: relative;
+  color: #2d405f;
+  transition: 0.3s;
+  font-size: 14px;
+  font-family: "Krub", sans-serif;
+  font-weight: 600;
+  margin:0px 0px
+  
+}
+
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+  color: #3b4ef8;
+  
+}
+.nav-menu button{
+	background-color: #ddd;
+  border: 2px solid #4CAF50;
+  color: black;
+  
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  
+  cursor: pointer;
+  border-radius: 16px;
+}
+/*--------------------------------------------------------------
+# boy Section
+--------------------------------------------------------------*/
+#boy {
+  width: 100%;
+  height: 100vh;
+  
+  background-color:#0066a3;
+  border-bottom: 2px solid white;
+  text-align: center;
+}
+  
+
+
+#boy h1 {
+  margin: 0;
+  padding-top: 100px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 56px;
+  
+  width: 100%;
+  color: #FFFFFF;
+ }
+ #boy p{
+	 
+  
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 56px;
+  
+  width: 100%;
+  color: #FFFFFF;
+ }
+
+
+#boy button {
+  background-color: #ddd;
+  border: 2px solid #4CAF50;
+  color: black;
+  
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  
+  cursor: pointer;
+  border-radius: 16px;
+
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width:100%;
+  height: 100vh;
+  background: blue;
+  border-bottom: 2px solid white;
+  text-align: center;
+  margin-right:100px
+  
+}
+
+#hero .container {
+  padding-top: 10px;
+}
+
+#hero h1 {
+  margin: 0;
+  padding-top: 70px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #141d2b;
+  width: 60%;
+  color: #FFFFFF;
+}
+
+
+#hero .hero-img {
+  max-width: 30%;
+  margin-top: 20px;
+}
+#hero .form{
+  padding-top: 10px;
+}
+#hero .form input {
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 0px 15px 2px 15px;
+  width: 580px;
+  height: 40px;
+  margin: 0 8px;
+}
+
+#hero .form button[type="submit"] {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: flex;
+  padding: 7px 30px;
+  border-radius: 3px;
+  transition: 0.5s;
+  margin: auto;
+  border: 2px solid #3B4EF8;
+  color: #fff;
+  background: #3B4EF8;
+}
+#hero h3{
+  color: #FFFFFF;
+  
+}
+#hero h6{
+  color:#FFFFFF;
+}
+
+
+
+@media (max-width: 768px) {
+  #hero .form input {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 0px 15px 2px 15px;
+    width: 300px;
+    height: 40px;
+    margin: 0 8px;
+  }
+}
+
+@media (max-width: 992px) {
+  #hero h1 {
+    font-size: 36px;
+    line-height: 42px;
+    width: 100%;
+	margin-top: -180px;
+  }
+  #hero h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  #hero .hero-img {
+    max-width: 20%;
+	margin-top: 50px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 0px 0px;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f6f8fb;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #2d405f;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #aabbd7;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+
+/*--------------------------------------------------------------
+# about
+--------------------------------------------------------------*/
+
+.about {
+  background: #2d405f;
+  padding-bottom: 150px;
+  padding-top:80px
+  
+}
+
+.about .section-title h2, .about .section-title p {
+  color: #fff;
+}
+
+.about .section-title h2::after {
+  background: rgba(255, 255, 255, 0.2);
+}
+.about h3 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #FFFFFF;
+  padding-top: 10px;
+  text-align:center;
+}
+.about p {
+  font-size: 16px;
+  color: #FFFFFF;
+  padding-top: 10px;
+  text-align:center;
+}
+.about button{
+	background-color: #ddd;
+  border: 2px solid #4CAF50;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 16px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+	margin:auto;
+}
+
+.about .description {
+  font-size: 15px;
+  line-height: 108px;
+  margin-bottom: 0;
+}
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+#contact {
+  width: 100%;
+  height: 100vh;
+  
+  background-color:#0066a3;
+  border-bottom: 2px solid white;
+  text-align: center;
+}
+  
+
+
+#contact h1 {
+  margin: 0;
+  padding-top: 100px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 56px;
+  text-align:center;
+  width: 100%;
+  color: #FFFFFF;
+ }
+ #contact p{
+	 
+  text-align:center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 56px;
+  
+  width: 100%;
+  color: #FFFFFF;
+ }
+
